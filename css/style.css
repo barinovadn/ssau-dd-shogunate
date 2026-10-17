@@ -1,0 +1,445 @@
+body {
+    background-color: #f5f0e8;
+    color: #2b2b2b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4a1f0f;
+    letter-spacing: 4px;
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #4a1f0f;
+    padding-left: 12px;
+    margin-top: 30px;
+}
+
+.section {
+    padding: 20px 40px;
+}
+
+.subtitle {
+    color: #8a6d3b;
+    font-size: 16px;
+}
+
+a[target="_blank"] {
+    font-style: italic;
+}
+
+.paragraph {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #2b2b2b;
+}
+
+.header {
+    background-color: #efe6d6;
+    padding: 0;
+    margin: 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background-color: #6b3a1e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #fffaf0;
+    padding: 4px;
+}
+
+.logo-text {
+    color: #f5f0e8;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #b8860b;
+    border-bottom: 2px solid #b8860b;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    background-color: #efe6d6;
+}
+
+.hero-img {
+    width: 50%;
+    max-width: 900px;
+    height: 580px;
+    object-fit: cover;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 6px 20px rgba(74, 31, 15, 0.25);
+}
+
+.hero-text {
+    padding: 40px;
+    flex: 1;
+}
+
+.hero-text h1 {
+    margin-top: 0;
+}
+
+.hero-paragraph {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #2b2b2b;
+}
+
+.about-section {
+    background-color: #efe6d6;
+    padding-right: 0; 
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-row {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+
+    max-width: none;
+
+    padding-right: 0;
+}
+
+.about-photo-right {
+    width: 100%;
+    max-width: none;
+    height: 580px;
+    object-fit: cover;
+    border-bottom-left-radius: 40px;
+    box-shadow: 0 8px 24px rgba(74, 31, 15, 0.22);
+    margin-right: 0;
+}
+
+.about-footer {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    color: #6b3a1e;
+    background-color: #fffaf0;
+    border: 2px solid #d8c8a8;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 40px auto 0;
+    max-width: 900px;
+}
+
+.philosophy-section {
+    background-color: #6b3a1e;
+}
+
+.philosophy-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.philosophy-title {
+    margin: 0;
+    align-self: center;
+    font-size: 32px;
+    letter-spacing: 4px;
+    color: #fffaf0;
+    position: static;       
+}
+
+.philosophy-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.philosophy-footer {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    color: #6b3a1e;
+    background-color: #fffaf0;
+    border: 2px solid #d8c8a8;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding: 20px 0 30px;
+}
+
+.menu-card {
+    background-color: #efe6d6;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(74, 31, 15, 0.12);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card-header {
+    background-color: #7a4a2b;
+    padding: 14px 20px;
+    flex-shrink: 0;
+}
+
+.menu-card-header h3 {
+    margin: 0;
+    color: #f5f0e8;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.menu-card-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 20px 16px;
+    flex: 1;
+}
+
+.menu-card-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #d8c8a8;
+}
+
+.menu-card-list li:last-child {
+    border-bottom: none;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.item-name {
+    color: #6b3a1e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.item-price {
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.item-volume {
+    display: block;
+    margin-top: 2px;
+    color: #a08b6e;
+    font-size: 13px;
+}
+
+.bg-image-block {
+    width: 100%;
+    height: 320px;
+    background-image: url("../img/cat.png");
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 30px 0;
+}
+
+.bg-image-text {
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 3px;
+    background-color: rgba(74, 31, 15, 0.65);
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.social-section {
+    padding-top: 0;
+}
+
+.social-link {
+    color: #6b3a1e;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #b8860b;
+    text-decoration: none;
+}
+
+.features-list {
+    list-style: none;
+    counter-reset: feature;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.features-list li {
+    counter-increment: feature;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+}
+
+.features-list li::before {
+    content: "光 ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    color: #b8860b;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2::before {
+    content: "侍";
+    font-size: 25px;
+    color: #b8860b;
+    margin-right: 10px;
+}
+
+h1::after {
+    content: "侍";
+    font-size: 40px;
+    color: #b8860b;
+    margin-left: 10px;
+}
+
+.hero-paragraph::after {
+    content: " ◦";
+    color: #b8860b;
+    font-weight: bold;
+}
+
+#contacts {
+    text-align: center;
+    background-color: #efe6d6;
+    padding: 20px 40px;
+}
+
+.booking-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.booking-photo img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(74, 31, 15, 0.2);
+}
+
+.booking-form-box {
+    background-color: #fffaf0;
+    border: 2px solid #d8c8a8;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(74, 31, 15, 0.08);
+}
+
+.booking-form-box form p {
+    margin: 0 0 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6b3a1e;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.booking-form-box input,
+.booking-form-box select,
+.booking-form-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c9b79c;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.booking-form-box button {
+    background-color: #6b3a1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.booking-form-box button:hover {
+    background-color: #b8860b;
+}
